@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adwind Software</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <div class="logo-nav">
+            <img src="img/AdSw_logo2.png" alt="Adwind Software Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" class="lang-cs">O nás</a><a href="#about" class="lang-en" style="display:none;">About Us</a></li>
+                <li><a href="#contact" class="lang-cs">Kontakt</a><a href="#contact" class="lang-en" style="display:none;">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="lang-switch">
+            <button id="cs-btn" aria-label="Čeština"><h4>CZ</h3></button>
+            <button id="en-btn" aria-label="English"><h4>EN</h3></button>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="lang-cs">
+                <h2>Moderní řešení pro analýzu televizní sledovanosti</h2>
+                <p>
+                    Vyvíjíme software pro komplexní analýzu dat z různých typů měření televizní sledovanosti – panelového, census i OOH. Zpracováváme také data z výzkumu o zákaznících všech tržních kategorií ČR, včetně jejich nákupního a mediálního chování. Specializujeme se na integraci různých zdrojů dat pomocí pokročilých statistických a matematických metod.
+                </p>
+                <h3>Co nabízíme</h3>
+                <ul>
+                    <li><strong>Zpracování složitých dat</strong><br>
+                        Zpracováváme velká a komplexní data tak, aby uživatel dostal přesně to, co potřebuje – ve správném formátu a v požadovaném čase.
+                    </li>
+                    <li><strong>Automatizace</strong><br>
+                        Výsledná data je možné automaticky nahrávat na různé cloudové datové platformy. Podporujeme eliminaci ruční práce a zrychlujeme celý proces.
+                    </li>
+                    <li><strong>Partnerský přístup</strong><br>
+                        Preferujeme flexibilitu a spolupráci s uživateli. Naše řešení přizpůsobujeme konkrétním potřebám, ne obecným šablonám a unifikovaným korporátním produktům.
+                    </li>
+                    <li><strong>Zkušený tým</strong><br>
+                        Jsme tým profesionálů s dlouholetými zkušenostmi, ale stále se zápalem pro inovace a nové technologie.
+                    </li>
+                </ul>
+            </div>
+            <div class="lang-en" style="display:none;">
+                <h2>Modern solutions for TV audience analysis</h2>
+                <p>
+                    We develop software for comprehensive analysis of data from various types of TV audience measurement – panel, census, and OOH. We also process data from research on customers across all market categories in the Czech Republic, including their purchasing and media behavior. We specialize in integrating different data sources using advanced statistical and mathematical methods.
+                </p>
+                <h3>What we offer</h3>
+                <ul>
+                    <li><strong>Complex data processing</strong><br>
+                        We process large and complex data so that the user gets exactly what they need – in the right format and at the required time.
+                    </li>
+                    <li><strong>Automation</strong><br>
+                        The resulting data can be automatically uploaded to various cloud data platforms. We support the elimination of manual work and speed up the entire process.
+                    </li>
+                    <li><strong>Partnership approach</strong><br>
+                        We prefer flexibility and collaboration with users. We tailor our solutions to specific needs, not generic templates and unified corporate products.
+                    </li>
+                    <li><strong>Experienced team</strong><br>
+                        We are a team of professionals with many years of experience, but still passionate about innovation and new technologies.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="lang-cs">Kontaktujte nás</h2>
+            <h2 class="lang-en" style="display:none;">Contact Us</h2>
+            
+            <div class="contact-details">
+                <div class="lang-cs">
+                    <strong>Kontaktní osoba: </strong><a href="mailto:tereza.simeckova@adwindsoftware.cz">Tereza Šimečková</a><br>
+                    <br>
+                    <strong>Adresa:</strong>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Českobratrská+2778%2F1%2C+Praha+3+-+Žižkov%2C+Česká+Republika" target="_blank" rel="noopener">
+                        Českobratrská 2778/1, Praha 3 - Žižkov, Česká Republika
+                    </a>
+                    <br>
+                    
+                    <br>
+                    <strong>IČ:</strong> 08538298<strong> DIČ:</strong>08538298<br>
+                    <br>
+                    <small>Společnost zapsána v obchodním rejstříku vedeném Městským soudem v Praze, spisová značka: C 320620 vedená u Městského soudu v Praze</small>
+                </div>
+                <div class="lang-en" style="display:none;">
+                    <strong>Contact person:</strong> <a href="mailto:tereza.simeckova@adwindsoftware.cz">Tereza Šimečková</a><br>
+                    <br>
+                    <strong>Address:</strong>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Českobratrská+2778%2F1%2C+Prague+3+-+Žižkov%2C+Czech+Republic" target="_blank" rel="noopener">
+                        Českobratrská 2778/1, Prague 3 - Žižkov, Czech Republic
+                    </a>
+<br><br>
+                    <strong>Company ID:</strong> 08538298<strong> VAT ID:</strong> 08538298<br>
+                    <br>
+                    <small>The company is registered in the Commercial Register maintained by the Municipal Court in Prague, file number: C 320620 kept by the Municipal Court in Prague</small>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Adwind Software s.r.o.</p>
+    </footer>
+    <script>
+        // Simple language switcher
+        const csBtn = document.getElementById('cs-btn');
+        const enBtn = document.getElementById('en-btn');
+        csBtn.onclick = () => {
+            document.documentElement.lang = 'cs';
+            document.querySelectorAll('.lang-cs').forEach(e => e.style.display = '');
+            document.querySelectorAll('.lang-en').forEach(e => e.style.display = 'none');
+        };
+        enBtn.onclick = () => {
+            document.documentElement.lang = 'en';
+            document.querySelectorAll('.lang-cs').forEach(e => e.style.display = 'none');
+            document.querySelectorAll('.lang-en').forEach(e => e.style.display = '');
+        };
+    </script>
+</body>
+</html>
